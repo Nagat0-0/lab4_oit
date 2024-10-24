@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опитувальник - Турфірма "Мандри"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Турфірма "Мандри"</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li class="relative">
+                    Послуги &#9660; 
+                    <ul class="submenu">
+                        <li><a href="https://www.youtube.com/watch?v=cpKT_xAzj3A">Тури до Європи</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=cpKT_xAzj3A">Екскурсії</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=cpKT_xAzj3A">Пляжний відпочинок</a></li>
+                    </ul>
+                </li>
+                <li><a href="survey.html">Опитувальник</a></li>
+                <li><a href="news.html">Новини</a></li>
+                <li><a href="login-register.html">Авторизація/Реєстрація</a></li>
+            </ul>
+            <input type="search" id="search-l" placeholder="Search">
+        </nav>
+    </header>
+
+    <section id="survey">
+        <h2>Опитувальник</h2>
+        <form>
+            <label for="login">Логін:</label>
+            <input type="text" id="login" name="login" required><br>
+
+            <label for="email-survey">Електронна пошта:</label>
+            <input type="email" id="email-survey" name="email-survey" required><br>
+
+            <label for="message">Ваші побажання:</label><br>
+            <textarea id="message" name="message" rows="10" cols="30" required></textarea><br>
+
+            <label for="travel-type">Тип подорожі:</label>
+            <select id="travel-type" name="travel-type">
+                <option value="beach" selected>Пляжний відпочинок</option>
+                <option value="adventure">Пригоди</option>
+                <option value="cultural">Культурний туризм</option>
+                <option value="sport">Спортивний туризм</option>
+                <option value="religion">Релігійний туризм</option>
+                <option value="recreation">Рекреаційний туризм</option>
+                <option value="cruise">Круїз</option>
+            </select><br>
+
+            <p>Виберіть ваш бюджет:</p>
+            <input type="radio" id="low-budget" name="budget" value="low">
+            <label for="low-budget">До $1000</label><br>
+
+            <input type="radio" id="medium-budget" name="budget" value="medium">
+            <label for="medium-budget">$1000 - $5000</label><br>
+
+            <input type="radio" id="high-budget" name="budget" value="high">
+            <label for="high-budget">Більше $5000</label><br>
+
+            <input type="submit" value="Надіслати">
+            <input type="reset" value="Очистити">
+        </form>
+    </section>
+
+    <footer>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, est. Deserunt, blanditiis natus duc</p>
+    </footer>
+    <button id="scrollTop" title="Наверх">↑</button>
+    <script>
+        window.onscroll = function() {
+    var scrollTopButton = document.getElementById("scrollTop");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollTopButton.style.display = "block";
+    } else {
+        scrollTopButton.style.display = "none";
+    }
+};
+
+document.getElementById('scrollTop').onclick = function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+
+    </script>
+</body>
+</html>

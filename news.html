@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новини - Турфірма "Мандри"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Турфірма "Мандри"</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li class="relative">
+                    Послуги &#9660; 
+                    <ul class="submenu">
+                        <li><a href="https://www.youtube.com/watch?v=cpKT_xAzj3A">Тури до Європи</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=cpKT_xAzj3A">Екскурсії</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=cpKT_xAzj3A">Пляжний відпочинок</a></li>
+                    </ul>
+                </li>
+                <li><a href="survey.html">Опитувальник</a></li>
+                <li><a href="news.html">Новини</a></li>
+                <li><a href="login-register.html">Авторизація/Реєстрація</a></li>
+            </ul>
+            <input type="search" id="search-l" placeholder="Search">
+        </nav>
+    </header>
+
+    <section id="news">
+        <h2>Останні новини</h2>
+        <article>
+            <h3>Нові тури на 2024 рік</h3>
+            <p>У новому сезоні ми підготували для вас безліч цікавих маршрутів та пропозицій.</p>
+        </article>
+        <article>
+            <h3>Спеціальні пропозиції</h3>
+            <p>Тільки цього місяця ми пропонуємо знижки на тури до Європи.</p>
+            <p><img src="/images/paris.jpg" alt="Париж" width="300"> <br>Париж</p>
+        </article>
+        <article>
+            <h3>Поради для мандрівників</h3>
+            <p>Плануєте подорож? Ознайомтеся з нашими порадами.</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, est. Deserunt, blanditiis natus duc</p>
+    </footer>
+    <button id="scrollTop" title="Наверх">↑</button>
+    <script>
+        window.onscroll = function() {
+    var scrollTopButton = document.getElementById("scrollTop");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollTopButton.style.display = "block";
+    } else {
+        scrollTopButton.style.display = "none";
+    }
+};
+
+document.getElementById('scrollTop').onclick = function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+
+    </script>
+</body>
+</html>

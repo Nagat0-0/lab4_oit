@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Турфірма "Мандри" - Головна</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <h1>Турфірма "Мандри"</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li class="relative">
+                    Послуги &#9660; 
+                    <ul class="submenu">
+                        <li><a href="https://www.youtube.com/watch?v=cpKT_xAzj3A">Тури до Європи</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=cpKT_xAzj3A">Екскурсії</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=cpKT_xAzj3A">Пляжний відпочинок</a></li>
+                    </ul>
+                </li>
+                <li><a href="survey.html">Опитувальник</a></li>
+                <li><a href="news.html">Новини</a></li>
+                <li><a href="login-register.html">Авторизація/Реєстрація</a></li>
+            </ul>
+            <input type="search" id="search-l" placeholder="Search">
+        </nav>
+    </header>
+
+    <section id="main">
+        <h2>Ласкаво просимо до Турфірми "Мандри"</h2>
+        <p>Ми раді вітати вас на нашому сайті! Турфірма "Мандри" вже понад 10 років допомагає людям здійснювати їхні мрії про подорожі...</p>
+        <div class="image-container">
+        <img src="images/img1.jpg" alt="Some Image , IDC" class="main-image">
+        <div class="overlay">Ваші Мандри - Наша гідність</div>
+    </div>
+    </section>
+    <section id="testimonials" class="container my-5">
+        <h2 class="text-center">Відгуки користувачів</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">"Цей сайт допоміг мені знайти ідеальний тур! Я задоволений обслуговуванням та організацією."</p>
+                        <p class="font-weight-bold">- Олександр П.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">"Ніколи не думала, що планування подорожі може бути таким простим. Дякую за допомогу!"</p>
+                        <p class="font-weight-bold">- Ірина С.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">"Чудові пропозиції та безкоштовна консультація. Рекомендую всім!"</p>
+                        <p class="font-weight-bold">- Дмитро К.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">"Я вражений швидкістю та якістю обслуговування. Дякую за чудову подорож!"</p>
+                        <p class="font-weight-bold">- Катерина Л.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, est. Deserunt, blanditiis natus duc</p>
+    </footer>
+    <button id="scrollTop" title="Наверх">↑</button>
+
+    <script>
+        window.onscroll = function() {
+    var scrollTopButton = document.getElementById("scrollTop");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollTopButton.style.display = "block";
+    } else {
+        scrollTopButton.style.display = "none";
+    }
+};
+
+document.getElementById('scrollTop').onclick = function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
